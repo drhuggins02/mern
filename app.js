@@ -1,13 +1,17 @@
 const express = require('express')
 const app = express()
+const morgan = require("morgan");
 
 // BRING IN ROUTES
-const postRoutes = require('./routes/post');
+const { getPosts } = require('./routes/post');
 
-app.get("/", postRoutes.getPosts);
+// MIDDLEWARE
+app.use(morgan('dev'));
+
+app.get("/", getPosts);
 
 const port = 8080;
 
 app.listen(port, () => {
-    console.log(`A Really Cool Node JS API is listening on port: ${port}`);
+    console.log(`A Really Super Cool Node JS API is listening on port: ${port}`);
 });
