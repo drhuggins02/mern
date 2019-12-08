@@ -13,5 +13,5 @@ app.get("/", getPosts);
 const port = 8080;
 
 app.listen(port, () => {
-    console.log(`A Really Super Cool Node JS API is listening on port: ${port}`);
+    console.log(`Node JS API is listening on port: ${port}`);
 });
