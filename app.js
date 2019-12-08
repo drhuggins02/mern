@@ -1,12 +1,13 @@
 const express = require('express')
 const app = express()
 
-app.get("/", (req, res) => {
-    res.send("Hello world from node js");
-})
+// BRING IN ROUTES
+const postRoutes = require('./routes/post');
 
-const post = 8080
+app.get("/", postRoutes.getPosts);
+
+const port = 8080;
 
 app.listen(port, () => {
-    console.log(`A Node JS API is listening on port: ${port}`);
+    console.log(`A Really Cool Node JS API is listening on port: ${port}`);
 });
