@@ -1,0 +1,22 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "this is my 1st shot at a full stack application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drhuggins02/mern.git"
+  },
+  "author": "Dennis Huggins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drhuggins02/mern/issues"
+  },
+  "homepage": "https://github.com/drhuggins02/mern#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
